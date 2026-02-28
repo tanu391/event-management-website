@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EventPro - College Fest 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>EventPro</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="admin.html">Admin</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>College Fest 2026</h1>
+    <p>Experience Innovation, Talent & Fun!</p>
+    <p id="countdown"></p>
+    <a href="register.html" class="btn">Register Now</a>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about">
+    <h2>About The Event</h2>
+    <p>
+        College Fest 2026 brings together students from different departments
+        to compete, collaborate and celebrate creativity. 
+        Join exciting competitions and win amazing prizes!
+    </p>
+</section>
+
+<!-- FEATURED EVENTS -->
+<section class="featured">
+    <h2>Featured Events</h2>
+    <div class="event-container">
+        <div class="event-card">
+            <img src="images/coding.jpg">
+            <h3>Coding Competition</h3>
+        </div>
+        <div class="event-card">
+            <img src="images/dance.jpg">
+            <h3>Dance Battle</h3>
+        </div>
+        <div class="event-card">
+            <img src="images/quiz.jpg">
+            <h3>Business Quiz</h3>
+        </div>
+    </div>
+</section>
+
+<!-- WHY PARTICIPATE -->
+<section class="why">
+    <h2>Why Participate?</h2>
+    <ul>
+        <li>🏆 Win Cash Prizes</li>
+        <li>📜 Get Certificates</li>
+        <li>🤝 Networking Opportunities</li>
+        <li>🎉 Fun & Entertainment</li>
+    </ul>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: eventpro@gmail.com</p>
+    <p>Phone: +91-9876543210</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 EventPro. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "3b0b4a07-9b49-4d91-adcb-70caa9f7294e", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "75633ebc-ccbf-460c-8058-bc1a442b0494", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>

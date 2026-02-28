@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Event Registration</h2>
+
+<form id="regForm">
+    <input type="text" placeholder="Full Name" id="name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone Number" required>
+
+    <select required>
+        <option value="">Select Event</option>
+        <option>Coding Competition</option>
+        <option>Dance Battle</option>
+        <option>Business Quiz</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+document.getElementById("regForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Registration Successful!");
+});
+</script>
+
+</body>
+</html>
